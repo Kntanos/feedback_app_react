@@ -14,7 +14,10 @@
     "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
     "uuid": "^8.3.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-webpack-plugin": "^0.1.2"
   }
 }

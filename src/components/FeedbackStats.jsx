@@ -1,5 +1,4 @@
-// import PropTypes from 'prop-types'
-import { useContext } from 'react/cjs/react.development'
+import { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 
 const FeedbackStats = () => {
@@ -19,10 +18,5 @@ const FeedbackStats = () => {
     </div>
   )
 }
-
-// No longer needed because of Context
-// FeedbackStats.protoTypes = {
-//   feedback: PropTypes.array.isRequired
-// }
 
 export default FeedbackStats;

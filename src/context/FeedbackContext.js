@@ -17,7 +17,7 @@ export const FeedBackProvider = ({ children }) => {
 
   //Fetch feedback
   const fetchFeedback = async () => {
-    const response = await fetch('http://localhost:5000/feedback?_sort=id&_order=desc')
+    const response = await fetch('/feedback?_sort=id&_order=desc')
     const data = await response.json()
 
     setFeedback(data)
@@ -42,7 +42,6 @@ export const FeedBackProvider = ({ children }) => {
     setFeedback(feedback.map((item) => item.id === id ? {...item, ...updItem } : item))
   } 
   
-
   // This will set item to be updated
   const editFeedback = (item) => {
     setFeedbackEdit({
